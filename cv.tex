@@ -54,17 +54,16 @@
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
-\address{10th Xitucheng Rd.}{Haidian District, Beijing 100876}
 \mobile{(086) 15810537277}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
-\email{chencheng1022@gmail.com}
-\homepage{iamcc.me}{iamcc.me} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\email{iamccme@qq.com}
+\homepage{www.iamcc.me}{iamcc.me} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
 \photo[70pt][0.4pt]{pictures/jl.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-\quote{"He who does not have a strong will can never achieve high intelligence" - Mo-tse}
 
 %----------------------------------------------------------------------------------------
+
 
 \begin{document}
 
@@ -96,53 +95,35 @@
 
 %------------------------------------------------
 
-\tllabelcventry{2011.5}{2012.2}{2011.5-2012.2}{Intern Developer in Test}{Baidu Inc.}{Baidu Image Test}{}{
+\tllabelcventry{2012}{2013}{2012.5-2013.3}{Intern Developer }{Alibaba cloud Inc.}{The recommendation team of the search department}{}{
 \itshape
-Baidu Image Test team is in charge to test related to the front end and the back end  of th Image search engine.
 \upshape
 \begin{itemize}
-\item Took charge of the Testing of \bfseries{Baidu wallpaper app}\mdseries, participated throughout design, development, testing and deployment.
-\item Took charge of the Testing of \bfseries{Baidu tuqu}\mdseries, participated throughout design, testing.
-\item Developed the web test automation framework : Nuke,  with Ruby and Watir.
-\item Promoted the nuke to NSQA, combine the nuke with Hudson,  realized the  real-time monitoring of the web page online and the regression testing after the code is submitted .
-\end{itemize}}
-
-
-\tllabelcventry{2012.5}{2013.3}{2012.5-2013.3}{Intern Developer }{Alibaba cloud Inc.}{The recommendation team of the search department}{}{
-\itshape
- The team is in charge to the data processing and data mining of the logs of search and recommendation service.
-\upshape
-\begin{itemize}
-\item Took charge of the \bfseries{The new data statistics platform}\mdseries, participated throughout design, development, testing.
-\item Took charge of the Testing of \bfseries{Data monitoring platform}\mdseries, participated throughout design, development, testing.
+\item Took charge of the \bfseries{data statistics platform and data monitoring platform}\mdseries, participated throughout design, development, testing.
 \item Developed the Map-Reduce Program based on the Feitian.
 \end{itemize}}
 %------------------------------------------------
 
-\subsection{Projects}
+\tllabelcventry{2012}{2013}{2013.6-2013.9}{Intern Developer }{Alimama Inc.}{The technical team of display advertising}{}{
+\itshape
+\upshape
+\begin{itemize}
+\item Took charge of the improvement of the Advertising algorithm.
+\end{itemize}}
+\subsection{School Projects}
 
 %------------------------------------------------
 
-\tllabelcventry{2012}{0}{2012.2-Present}{A Vehicle Scheduling solution based on Multi-objective optimization algorithm}{Team Leader}{}{}{
+\tllabelcventry{2012}{0}{2012.2-Present}{A Vehicle scheduling solution based on Multi-objective optimization algorithm}{Team Leader}{}{}{
 \itshape Research on the actual demand of the vehicle scheduling problem, design the corresponding model, and implement the algorithm based on Multi-objective optimization algorithmusing c++ and STL.
 \upshape
 \begin{itemize}
-\item As team leader, design the new underlying architechture.
-\item Developed several modules.
+\item As team leader, design the new underlying architechture and developed several modules.
 \end{itemize}}
 
 %------------------------------------------------
 
-\tllabelcventry{2010}{2011}{2010.6-2010.7}{DNS Relay Server}{Team Leader}{}{}{
-\itshape Design and Implement a DNS Relay Server software by analyzing DNS protocol using C++ programming language and knowledge of socket
-\upshape
-\begin{itemize}
-\item Lead in project design, developed the simple DNS server.
-\end{itemize}}
-
-%------------------------------------------------
-
-\tllabelcventry{2009}{2010}{2009.3-2009.6}{imitated travel  inquiry system}{Participator}{}{}{
+\tllabelcventry{2009}{2010}{2009.3-2009.6}{Imitated travel inquiry system}{Participator}{}{}{
 \itshape
 There are three kinds of transportation between cities (automobiles, trains, and planes)， a passager requested to the system for travel. system design a travel route for him.
 \upshape
@@ -152,6 +133,31 @@ There are three kinds of transportation between cities (automobiles, trains, and
 
 %------------------------------------------------
 
+\subsection{Individual Projects}
+
+\tllabelcventry{2012}{0}{2012.6}{Movie recommender system using Collaborative filtering algorithm }{}{}{}{
+\itshape Implements the algorithm of user-based CF and Item-based CF, using the GroupLens data provided by GroupLens to evaluate.
+\upshape
+\begin{itemize}
+\item The system is developed in python. With the 100w training data, the accuracy rate can reach 25\%
+\item github: https://github.com/iamccme/recommend-CF
+\end{itemize}}
+
+%------------------------------------------------
+\tllabelcventry{2013}{0}{2013.5}{Text classifier based on naive bayes}{}{}{}{
+\upshape
+\begin{itemize}
+\item The text classifier is developed in C++, the accuracy rate can reach 55\%
+\item github: https://github.com/iamccme/my-naive-bayes-classifier
+\end{itemize}}
+%------------------------------------------------
+\tllabelcventry{2013}{0}{2013.4-2013.5}{Emotional analyzer of weibo content}{}{}{}{
+\itshape Cooperate with others to complete, in charge of the extension and mark of the emotional words.
+\upshape
+\begin{itemize}
+\item The analyzer is developed in JAVA. The training data is downloaded from pameng, the used tokenizer is NLPIR, the used machine learning module is weka, the index of the weibo content is build by lucene.
+\item github: https://github.com/iamccme/weibo-mining
+\end{itemize}}
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
@@ -165,14 +171,10 @@ There are three kinds of transportation between cities (automobiles, trains, and
 \subsection{Development}
 \cvitem{Language}{\texttt{Python\footnotemark[1], C\footnotemark[2], C++\footnotemark[1],PHP\footnotemark[3],Shell/Bash\footnotemark[2], Ruby\footnotemark[2]}}
 \cvitem{Framework}{\texttt{django\footnotemark[2], rails\footnotemark[3]}}
-\cvitem{Web}{\texttt{HTML/XHTML\footnotemark[2], CSS\footnotemark[3]}}
 \cvitem{Database}{\texttt{MySQL\footnotemark[2], HBase\footnotemark[2]}}
 \cvitem{Tools}{\texttt{Hive\footnotemark[1], Hudson\footnotemark[2]}}
 \cvitem{Editing}{\LaTeX\footnotemark[3], \texttt{Office\footnotemark[2], Vim\footnotemark[2]}}
-\cvitem{OS}{\texttt{GNU/Linux(Ubuntu/RHEL/Arch)\footnotemark[1], Mac OSX\footnotemark[2], Windows\footnotemark[2]}}
-\cvitem{Web Server}{\texttt{Apache\footnotemark[2], lighttpd\footnotemark[3]}}
 \cvitem{Code Management}{\texttt{Git\footnotemark[3], SVN\footnotemark[1]}}
-
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
@@ -183,8 +185,8 @@ There are three kinds of transportation between cities (automobiles, trains, and
 \footnotetext[4]{Beijing University of Posts and Telecommunications}
 
 \subsection{Honors}
+\cvitem{2013}{BUPT \bfseries{First Class Scholarship}}
 \cvitem{2011, 2012}{BUPT \bfseries{Second Class Scholarship}}
-\cvitem{2010}{BUPT \bfseries{Third Class Scholarship}}
 \cvitem{2010}{BUPT \bfseries{Excellent league member}}
 \cvitem{2009}{BUPT \bfseries{Excellent Student Cadre}}
 
@@ -196,17 +198,10 @@ There are three kinds of transportation between cities (automobiles, trains, and
 \section{Languages}
 
 \cvitemwithcomment{English}{CET-6 439}{}
-\cvitemwithcomment{English}{CET-6 514}{}
+\cvitemwithcomment{English}{CET-4 514}{}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
-
-\section{Interests}
-
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-\cvlistdoubleitem{Photography}{Running}
-\cvlistdoubleitem{Cooking}{Reading}
 
 \end{document}
