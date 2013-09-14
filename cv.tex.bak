@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{footmisc}
+
+\usepackage[scale=0.75, top=2cm, bottom=3cm]{geometry} % Reduce document margins
+\usepackage[firstyear=2007, lastyear=2014]{moderntimeline}
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\makeatletter
+\tikzset{
+    tl@startyear/.append style={
+        xshift=(0.5-\tl@startfraction)*\hintscolumnwidth,
+        anchor=base
+    }
+}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Cheng} % Your first name
+\familyname{Chen} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{10th Xitucheng Rd.}{Haidian District, Beijing 100876}
+\mobile{(086) 15810537277}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{chencheng1022@gmail.com}
+\homepage{iamcc.me}{iamcc.me} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/jl.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"He who does not have a strong will can never achieve high intelligence" - Mo-tse}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tllabelcventry{2011}{0}{2011.9}{Masters of Computer Science and Technology}{Beijing University of Posts and Telecommunications}{}{}{}  % Arguments not required can be left empty
+\tllabelcventry{2007}{2011}{2007.9-2011.7}{Bachelor of Computer Science and Technology}{Beijing University of Posts and Telecommunications}{}{}{}
+
+%\section{Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Internship}
+
+%------------------------------------------------
+
+\tllabelcventry{2011.5}{2012.2}{2011.5-2012.2}{Intern Developer in Test}{Baidu Inc.}{Baidu Image Test}{}{
+\itshape
+Baidu Image Test team is in charge to test related to the front end and the back end  of th Image search engine.
+\upshape
+\begin{itemize}
+\item Took charge of the Testing of \bfseries{Baidu wallpaper app}\mdseries, participated throughout design, development, testing and deployment.
+\item Took charge of the Testing of \bfseries{Baidu tuqu}\mdseries, participated throughout design, testing.
+\item Developed the web test automation framework : Nuke,  with Ruby and Watir.
+\item Promoted the nuke to NSQA, combine the nuke with Hudson,  realized the  real-time monitoring of the web page online and the regression testing after the code is submitted .
+\end{itemize}}
+
+
+\tllabelcventry{2012.5}{2013.3}{2012.5-2013.3}{Intern Developer }{Alibaba cloud Inc.}{The recommendation team of the search department}{}{
+\itshape
+ The team is in charge to the data processing and data mining of the logs of search and recommendation service.
+\upshape
+\begin{itemize}
+\item Took charge of the \bfseries{The new data statistics platform}\mdseries, participated throughout design, development, testing.
+\item Took charge of the Testing of \bfseries{Data monitoring platform}\mdseries, participated throughout design, development, testing.
+\item Developed the Map-Reduce Program based on the Feitian.
+\end{itemize}}
+%------------------------------------------------
+
+\subsection{Projects}
+
+%------------------------------------------------
+
+\tllabelcventry{2012}{0}{2012.2-Present}{A Vehicle Scheduling solution based on Multi-objective optimization algorithm}{Team Leader}{}{}{
+\itshape Research on the actual demand of the vehicle scheduling problem, design the corresponding model, and implement the algorithm based on Multi-objective optimization algorithmusing c++ and STL.
+\upshape
+\begin{itemize}
+\item As team leader, design the new underlying architechture.
+\item Developed several modules.
+\end{itemize}}
+
+%------------------------------------------------
+
+\tllabelcventry{2010}{2011}{2010.6-2010.7}{DNS Relay Server}{Team Leader}{}{}{
+\itshape Design and Implement a DNS Relay Server software by analyzing DNS protocol using C++ programming language and knowledge of socket
+\upshape
+\begin{itemize}
+\item Lead in project design, developed the simple DNS server.
+\end{itemize}}
+
+%------------------------------------------------
+
+\tllabelcventry{2009}{2010}{2009.3-2009.6}{imitated travel  inquiry system}{Participator}{}{}{
+\itshape
+There are three kinds of transportation between cities (automobiles, trains, and planes)， a passager requested to the system for travel. system design a travel route for him.
+\upshape
+\begin{itemize}
+\item Participate in system design, and developed \texttt{pathfinding algorithm} modules, \texttt{C++} are used.
+\end{itemize}}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+ 
+\footnotetext[1]{Familiar}
+\footnotetext[2]{Less familier}
+\footnotetext[3]{Learn about basic usage}
+
+\subsection{Development}
+\cvitem{Language}{\texttt{Python\footnotemark[1], C\footnotemark[2], C++\footnotemark[1],PHP\footnotemark[3],Shell/Bash\footnotemark[2], Ruby\footnotemark[2]}}
+\cvitem{Framework}{\texttt{django\footnotemark[2], rails\footnotemark[3]}}
+\cvitem{Web}{\texttt{HTML/XHTML\footnotemark[2], CSS\footnotemark[3]}}
+\cvitem{Database}{\texttt{MySQL\footnotemark[2], HBase\footnotemark[2]}}
+\cvitem{Tools}{\texttt{Hive\footnotemark[1], Hudson\footnotemark[2]}}
+\cvitem{Editing}{\LaTeX\footnotemark[3], \texttt{Office\footnotemark[2], Vim\footnotemark[2]}}
+\cvitem{OS}{\texttt{GNU/Linux(Ubuntu/RHEL/Arch)\footnotemark[1], Mac OSX\footnotemark[2], Windows\footnotemark[2]}}
+\cvitem{Web Server}{\texttt{Apache\footnotemark[2], lighttpd\footnotemark[3]}}
+\cvitem{Code Management}{\texttt{Git\footnotemark[3], SVN\footnotemark[1]}}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Honor and Awards}
+
+\footnotetext[4]{Beijing University of Posts and Telecommunications}
+
+\subsection{Honors}
+\cvitem{2011, 2012}{BUPT \bfseries{Second Class Scholarship}}
+\cvitem{2010}{BUPT \bfseries{Third Class Scholarship}}
+\cvitem{2010}{BUPT \bfseries{Excellent league member}}
+\cvitem{2009}{BUPT \bfseries{Excellent Student Cadre}}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{CET-6 439}{}
+\cvitemwithcomment{English}{CET-6 514}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Photography}{Running}
+\cvlistdoubleitem{Cooking}{Reading}
+
+\end{document}
